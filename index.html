@@ -2,20 +2,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Table converter for responsive tables</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-		<style>
-			.hide{
-				display: none;
-			}
-			textarea {
-				width: 250px;
-				height: 450px;
-			}
-		</style>
+        <link rel="stylesheet" href="tables.css">
+        <link rel="stylesheet" href="urban-text.css">
+        
 	</head>
 	<body>
+        <h1>Table converter</h1>
+        
+        <p>Instructions: Paste your table into <a href="http://tableizer.journalistopia.com/">Tableizer</a>and insert the output html here.</p>
 		<div>
-			<input type="button" value="Preview" id="preview"><br>
+			<input type="button" value="Paste your HTML here" id="preview"><br>
 			<textarea id="input">
 <table>
 <tr><th>State</th><th> < 50% FPL</th><th>50-100% FPL</th><th>100-138% FPL3</th><th>Total</th><th>Percentage</th></tr>
