@@ -79,7 +79,9 @@
 				}
 				window.setTimeout(function(){
 					d3.select("#output")
-						.text(d3.select("#previewTable table").html())
+					output = d3.select("#previewTable table").html().replace("<tbody>","<thead>")
+					output = output.replace("</tr>","</tr></thead><tbody>")
+						d3.select("#output").text("<table>" + output + "</table>")
 				}, 100);
 			})
 		</script>
